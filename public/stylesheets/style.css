@@ -1,0 +1,44 @@
+body, head {
+  padding: 20px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.bg-3 { 
+  background-color: #ffffff;
+  color: #555555;
+}
+
+#main {
+  max-width:100%;
+}
+
+#disqus_wrapper {
+  margin: auto;
+  max-width:740px;
+}
+
+svg {
+  margin:auto;
+  display: block;
+}
+
+#download { 
+  color: white;
+}
+#swipeYear {
+  width: 85%;
+}
+
+#traslucentYear {
+  width: 85%;
+}
+
+#juxtaposeYear {
+  width: 1800px;
+  display: flex;
+  overflow: hidden;
+}

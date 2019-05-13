@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+path{
+  fill:transparent;
+  stroke:rgba(0,0,0,1);
+}
+
+/*4,*/
+
+.class-4 circle{
+  fill:red;
+}
+
+</style>
+<body>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="geo2rect.js"></script>
+<script>
+var config = {
+  width : 800,
+  height : 800,
+  padding : 70,
+  projection : d3.geoMercator(),
+  duration : 1200,
+  key:function(d){return d.properties.NOM_COM; },
+  grid : {
+    'María Pinto':{x:1,y:2},
+    'San Pedro':{x:0,y:5},
+    'Independencia':{x:5,y:1},
+    'La Florida':{x:8,y:4},
+    'Lo Barnechea':{x:8,y:0},
+    'Lo Espejo':{x:4,y:4},
+    'Lo Prado':{x:3,y:2},
+    'Pedro Aguirre Cerda':{x:4,y:3},
+    'Pudahuel':{x:2,y:2},
+    'San Joaquín':{x:6,y:3},
+    'San Ramón':{x:6,y:4},
+    'El Monte':{x:1,y:3},
+    'Isla de Maipo':{x:3,y:6},
+    'Talagante':{x:2,y:5},
+    'Colina':{x:7,y:0},
+    'Lampa':{x:2,y:1},
+    'Tiltil':{x:2,y:0},
+    'Pirque':{x:6,y:6},
+    'Puente Alto':{x:7,y:5},
+    'San José de Maipo':{x:9,y:4},
+    'Buin':{x:5,y:6},
+    'Paine':{x:4,y:6},
+    'San Bernardo':{x:4,y:5},
+    'Alhué':{x:2,y:6},
+    'Curacaví':{x:1,y:1},
+    'Calera de Tango':{x:3,y:5},
+    'Melipilla':{x:1,y:4},
+    'Cerrillos':{x:3,y:3},
+    'Cerro Navia':{x:3,y:1},
+    'Conchalí':{x:5,y:0},
+    'El Bosque':{x:5,y:5},
+    'Peñalolén':{x:8,y:3},
+    'Providencia':{x:6,y:2},
+    'Quilicura':{x:3,y:0},
+    'Vitacura':{x:7,y:1},
+    'Padre Hurtado':{x:2,y:3},
+    'Quinta Normal':{x:4,y:1},
+    'Recoleta':{x:6,y:1},
+    'Renca':{x:4,y:0},
+    'San Miguel':{x:5,y:3},
+    'Santiago':{x:5,y:2},
+    'Huechuraba':{x:6,y:0},
+    'La Cisterna':{x:5,y:4},
+    'La Granja':{x:7,y:4},
+    'La Pintana':{x:6,y:5},
+    'La Reina':{x:8,y:2},
+    'Las Condes':{x:8,y:1},
+    'Macul':{x:7,y:3},
+    'Maipú':{x:3,y:4},
+    'Ñuñoa':{x:7,y:2},
+    'Peñaflor':{x:2,y:4},
+    'Estación Central':{x:4,y:2},
+}
+  };
+var svg = d3.select('body').append('svg').attr('width',config.width).attr('height',config.height);
+
+var g2r = new geo2rect.draw();
+
+d3.queue()
+  .defer(d3.json,'rm.geojson')
+  .await(ready);
+
+function ready(error, districts){
+  var geojson = geo2rect.compute(districts);
+  g2r.config = config;
+  g2r.data = geojson;
+  g2r.svg = svg.append('g');
+  g2r.draw();
+
+}
+
+svg.on("mousemove", function() {
+    var mouse = d3.mouse(this);
+    var elem = document.elementFromPoint(mouse[0], mouse[1]);
+    // console.log(elem.className.baseVal)
+})
+
+d3.select('body').append('a').text('Toggle').on('click', function(){
+  g2r.toggle();
+  g2r.draw();
+  console.log("SVG", svg);
+});
+
+</script>
+</body>
+</html>

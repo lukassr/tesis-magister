@@ -1,0 +1,351 @@
+,state,catId,catName,category
+0,El Bosque,3,2016,1
+1,La Cisterna,3,2016,2
+2,La Florida,3,2016,2
+3,La Granja,3,2016,1
+4,La Pintana,3,2016,2
+5,La Reina,3,2016,1
+6,Las Condes,3,2016,1
+7,Lo Barnechea,3,2016,1
+8,Maipú,3,2016,2
+9,Ñuñoa,3,2016,5
+10,Pudahuel,3,2016,1
+11,Puente Alto,3,2016,1
+12,San Joaquín,3,2016,1
+13,San Miguel,3,2016,2
+14,Santiago,3,2016,8
+15,Vitacura,3,2016,1
+16,Cerrillos,4,2015,1
+17,Cerro Navia,4,2015,3
+18,Conchalí,4,2015,2
+19,Curacaví,4,2015,1
+20,El Bosque,4,2015,8
+21,Estación Central,4,2015,4
+22,Huechuraba,4,2015,12
+23,La Cisterna,4,2015,12
+24,La Florida,4,2015,22
+25,La Granja,4,2015,3
+26,La Pintana,4,2015,3
+27,La Reina,4,2015,6
+28,Las Condes,4,2015,15
+29,Lo Barnechea,4,2015,9
+30,Lo Espejo,4,2015,2
+31,Lo Prado,4,2015,3
+32,Macul,4,2015,8
+33,Maipú,4,2015,12
+34,Ñuñoa,4,2015,23
+35,Otra,4,2015,4
+36,Peñalolén,4,2015,5
+37,Pirque,4,2015,1
+38,Providencia,4,2015,9
+39,Pudahuel,4,2015,16
+40,Puente Alto,4,2015,7
+41,Quilicura,4,2015,9
+42,Quinta Normal,4,2015,3
+43,Recoleta,4,2015,5
+44,Renca,4,2015,5
+45,San Bernardo,4,2015,5
+46,San Joaquín,4,2015,1
+47,San Miguel,4,2015,9
+48,San Ramón,4,2015,2
+49,Santiago,4,2015,136
+50,Talagante,4,2015,2
+51,Vitacura,4,2015,19
+52,Buin,5,2014,1
+53,Calera de Tango,5,2014,1
+54,Cerrillos,5,2014,10
+55,Cerro Navia,5,2014,2
+56,Colina,5,2014,6
+57,Conchalí,5,2014,7
+58,El Bosque,5,2014,9
+59,Estación Central,5,2014,4
+60,Huechuraba,5,2014,8
+61,Independencia,5,2014,3
+62,La Cisterna,5,2014,23
+63,La Florida,5,2014,44
+64,La Granja,5,2014,7
+65,La Pintana,5,2014,10
+66,La Reina,5,2014,12
+67,Las Condes,5,2014,26
+68,Lo Barnechea,5,2014,4
+69,Lo Espejo,5,2014,4
+70,Lo Prado,5,2014,4
+71,Macul,5,2014,8
+72,Maipú,5,2014,21
+73,Ñuñoa,5,2014,15
+74,Otra,5,2014,6
+75,Pedro Aguirre Cerda,5,2014,1
+76,Peñalolén,5,2014,12
+77,Providencia,5,2014,16
+78,Pudahuel,5,2014,12
+79,Puente Alto,5,2014,3
+80,Quilicura,5,2014,11
+81,Quinta Normal,5,2014,10
+82,Recoleta,5,2014,8
+83,Renca,5,2014,4
+84,San Bernardo,5,2014,8
+85,San Joaquín,5,2014,1
+86,San Miguel,5,2014,11
+87,San Ramón,5,2014,6
+88,Santiago,5,2014,186
+89,Talagante,5,2014,1
+90,Vitacura,5,2014,18
+91,Lampa,5,2014,3
+92,Cerrillos,6,2013,6
+93,Cerro Navia,6,2013,4
+94,Colina,6,2013,3
+95,Conchalí,6,2013,3
+96,El Bosque,6,2013,13
+97,Estación Central,6,2013,15
+98,Huechuraba,6,2013,1
+99,Independencia,6,2013,6
+100,La Cisterna,6,2013,13
+101,La Florida,6,2013,17
+102,La Granja,6,2013,2
+103,La Pintana,6,2013,6
+104,La Reina,6,2013,8
+105,Las Condes,6,2013,26
+106,Lo Barnechea,6,2013,12
+107,Lo Espejo,6,2013,2
+108,Lo Prado,6,2013,3
+109,Macul,6,2013,12
+110,Maipú,6,2013,13
+111,Ñuñoa,6,2013,17
+112,Otra,6,2013,8
+113,Padre Hurtado,6,2013,1
+114,Pedro Aguirre Cerda,6,2013,4
+115,Peñalolén,6,2013,5
+116,Providencia,6,2013,20
+117,Pudahuel,6,2013,12
+118,Puente Alto,6,2013,7
+119,Quilicura,6,2013,11
+120,Quinta Normal,6,2013,8
+121,Recoleta,6,2013,8
+122,Renca,6,2013,4
+123,San Bernardo,6,2013,4
+124,San Joaquín,6,2013,3
+125,San Miguel,6,2013,10
+126,San Ramón,6,2013,5
+127,Santiago,6,2013,138
+128,Vitacura,6,2013,27
+129,Lampa,6,2013,1
+130,Buin,7,2012,1
+131,Calera de Tango,7,2012,1
+132,Cerrillos,7,2012,2
+133,Cerro Navia,7,2012,1
+134,Conchalí,7,2012,9
+135,Curacaví,7,2012,1
+136,El Bosque,7,2012,10
+137,Estación Central,7,2012,2
+138,Huechuraba,7,2012,15
+139,Independencia,7,2012,8
+140,La Cisterna,7,2012,6
+141,La Florida,7,2012,22
+142,La Granja,7,2012,2
+143,La Pintana,7,2012,5
+144,La Reina,7,2012,12
+145,Las Condes,7,2012,21
+146,Lo Barnechea,7,2012,15
+147,Lo Espejo,7,2012,1
+148,Lo Prado,7,2012,1
+149,Macul,7,2012,8
+150,Maipú,7,2012,17
+151,Ñuñoa,7,2012,35
+152,Otra,7,2012,10
+153,Padre Hurtado,7,2012,1
+154,Peñaflor,7,2012,2
+155,Peñalolén,7,2012,12
+156,Providencia,7,2012,12
+157,Pudahuel,7,2012,9
+158,Puente Alto,7,2012,6
+159,Quilicura,7,2012,10
+160,Quinta Normal,7,2012,6
+161,Recoleta,7,2012,4
+162,Renca,7,2012,3
+163,San Bernardo,7,2012,8
+164,San Joaquín,7,2012,3
+165,San Miguel,7,2012,17
+166,San Ramón,7,2012,2
+167,Santiago,7,2012,145
+168,Tiltil,7,2012,1
+169,Vitacura,7,2012,21
+170,Lampa,7,2012,7
+171,Calera de Tango,8,2011,1
+172,Cerrillos,8,2011,4
+173,Cerro Navia,8,2011,3
+174,Colina,8,2011,1
+175,Conchalí,8,2011,3
+176,El Bosque,8,2011,6
+177,Estación Central,8,2011,6
+178,Huechuraba,8,2011,10
+179,Independencia,8,2011,10
+180,La Cisterna,8,2011,11
+181,La Florida,8,2011,20
+182,La Granja,8,2011,4
+183,La Pintana,8,2011,3
+184,La Reina,8,2011,14
+185,Las Condes,8,2011,47
+186,Lo Barnechea,8,2011,12
+187,Lo Prado,8,2011,4
+188,Macul,8,2011,8
+189,Maipú,8,2011,25
+190,Melipilla,8,2011,3
+191,Ñuñoa,8,2011,37
+192,Otra,8,2011,3
+193,Padre Hurtado,8,2011,1
+194,Pedro Aguirre Cerda,8,2011,4
+195,Peñaflor,8,2011,2
+196,Peñalolén,8,2011,9
+197,Pirque,8,2011,1
+198,Providencia,8,2011,40
+199,Pudahuel,8,2011,9
+200,Puente Alto,8,2011,8
+201,Quilicura,8,2011,12
+202,Quinta Normal,8,2011,11
+203,Recoleta,8,2011,4
+204,Renca,8,2011,7
+205,San Bernardo,8,2011,7
+206,San Joaquín,8,2011,4
+207,San Miguel,8,2011,12
+208,San Ramón,8,2011,2
+209,Santiago,8,2011,181
+210,Vitacura,8,2011,30
+211,Lampa,8,2011,1
+212,Calera de Tango,9,2010,3
+213,Cerrillos,9,2010,6
+214,Cerro Navia,9,2010,3
+215,Conchalí,9,2010,4
+216,El Bosque,9,2010,5
+217,Estación Central,9,2010,5
+218,Huechuraba,9,2010,6
+219,Independencia,9,2010,3
+220,La Cisterna,9,2010,7
+221,La Florida,9,2010,22
+222,La Granja,9,2010,2
+223,La Pintana,9,2010,2
+224,La Reina,9,2010,10
+225,Las Condes,9,2010,36
+226,Lo Barnechea,9,2010,10
+227,Lo Espejo,9,2010,1
+228,Lo Prado,9,2010,3
+229,Macul,9,2010,5
+230,Maipú,9,2010,15
+231,Ñuñoa,9,2010,19
+232,Otra,9,2010,2
+233,Peñaflor,9,2010,1
+234,Peñalolén,9,2010,3
+235,Providencia,9,2010,27
+236,Pudahuel,9,2010,4
+237,Puente Alto,9,2010,5
+238,Quilicura,9,2010,4
+239,Quinta Normal,9,2010,8
+240,Recoleta,9,2010,3
+241,Renca,9,2010,1
+242,San Bernardo,9,2010,4
+243,San Joaquín,9,2010,1
+244,San Miguel,9,2010,11
+245,San Ramón,9,2010,3
+246,Santiago,9,2010,113
+247,Talagante,9,2010,1
+248,Vitacura,9,2010,18
+249,Lampa,9,2010,3
+250,Buin,10,2009,2
+251,Cerro Navia,10,2009,2
+252,Colina,10,2009,1
+253,El Bosque,10,2009,4
+254,Estación Central,10,2009,4
+255,Huechuraba,10,2009,3
+256,Independencia,10,2009,4
+257,La Cisterna,10,2009,3
+258,La Florida,10,2009,9
+259,La Granja,10,2009,3
+260,La Reina,10,2009,9
+261,Las Condes,10,2009,20
+262,Lo Barnechea,10,2009,3
+263,Macul,10,2009,4
+264,Maipú,10,2009,9
+265,Melipilla,10,2009,1
+266,Ñuñoa,10,2009,9
+267,Otra,10,2009,2
+268,Peñalolén,10,2009,3
+269,Providencia,10,2009,12
+270,Pudahuel,10,2009,2
+271,Puente Alto,10,2009,3
+272,Quilicura,10,2009,3
+273,Quinta Normal,10,2009,2
+274,Recoleta,10,2009,4
+275,Renca,10,2009,4
+276,San Bernardo,10,2009,3
+277,San Joaquín,10,2009,3
+278,San Miguel,10,2009,6
+279,San Ramón,10,2009,1
+280,Santiago,10,2009,80
+281,Vitacura,10,2009,19
+282,Cerrillos,11,2008,3
+283,Cerro Navia,11,2008,1
+284,Colina,11,2008,1
+285,Conchalí,11,2008,2
+286,El Bosque,11,2008,3
+287,Estación Central,11,2008,3
+288,Huechuraba,11,2008,7
+289,Independencia,11,2008,6
+290,La Cisterna,11,2008,4
+291,La Florida,11,2008,8
+292,La Granja,11,2008,3
+293,La Pintana,11,2008,1
+294,La Reina,11,2008,4
+295,Las Condes,11,2008,17
+296,Lo Barnechea,11,2008,5
+297,Lo Espejo,11,2008,1
+298,Macul,11,2008,4
+299,Maipú,11,2008,8
+300,Melipilla,11,2008,4
+301,Ñuñoa,11,2008,25
+302,Otra,11,2008,1
+303,Paine,11,2008,1
+304,Pedro Aguirre Cerda,11,2008,1
+305,Peñalolén,11,2008,6
+306,Providencia,11,2008,18
+307,Pudahuel,11,2008,6
+308,Puente Alto,11,2008,3
+309,Quilicura,11,2008,3
+310,Quinta Normal,11,2008,4
+311,Recoleta,11,2008,4
+312,San Bernardo,11,2008,4
+313,San Joaquín,11,2008,5
+314,San Miguel,11,2008,7
+315,San Ramón,11,2008,2
+316,Santiago,11,2008,79
+317,Talagante,11,2008,2
+318,Vitacura,11,2008,15
+319,Lampa,11,2008,1
+320,Calera de Tango,12,2007,1
+321,Cerrillos,12,2007,1
+322,El Bosque,12,2007,1
+323,Estación Central,12,2007,4
+324,Huechuraba,12,2007,3
+325,La Cisterna,12,2007,6
+326,La Florida,12,2007,6
+327,La Reina,12,2007,4
+328,Las Condes,12,2007,12
+329,Lo Barnechea,12,2007,5
+330,Lo Prado,12,2007,3
+331,Macul,12,2007,2
+332,Maipú,12,2007,6
+333,Ñuñoa,12,2007,18
+334,Otra,12,2007,2
+335,Pedro Aguirre Cerda,12,2007,1
+336,Peñalolén,12,2007,2
+337,Providencia,12,2007,9
+338,Pudahuel,12,2007,2
+339,Puente Alto,12,2007,1
+340,Quilicura,12,2007,1
+341,Quinta Normal,12,2007,1
+342,Recoleta,12,2007,6
+343,Renca,12,2007,3
+344,San Bernardo,12,2007,1
+345,San Joaquín,12,2007,2
+346,San Miguel,12,2007,7
+347,San Ramón,12,2007,1
+348,Santiago,12,2007,71
+349,Vitacura,12,2007,14
