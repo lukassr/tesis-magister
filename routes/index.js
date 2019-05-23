@@ -6,10 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('index', {page:'Home', menuId:'home'});
 });
 
-router.get('/color', function(req, res, next) {
-  res.render('color', {page:'Color', menuId:'color'});
-});
 
+// YEAR
 router.get('/staticYear', function(req, res, next) {
   res.render('staticYear', {page:'staticYear', menuId:'static'});
 });
@@ -28,6 +26,23 @@ router.get('/magicLenseYear', function(req, res, next) {
 
 router.get('/juxtaposeYear', function(req, res, next) {
   res.render('juxtaposeYear', {page:'year', menuId:'yuxtapose'});
+});
+
+// COLOR
+router.get('/staticColor', function(req, res, next) {
+  res.render('staticColor', {page:'staticColor', menuId:'static'});
+});
+
+router.get('/swipeColor', function(req, res, next) {
+  res.render('swipeColor', {page:'color', menuId:'swipe'});
+});
+
+router.get('/traslucentColor', function(req, res, next) {
+  res.render('traslucentColor', {page:'color', menuId:'traslucent'});
+});
+
+router.get('/magicLenseColor', function(req, res, next) {
+  res.render('magicLenseColor', {page:'color', menuId:'magicLense'});
 });
 
 module.exports = router;

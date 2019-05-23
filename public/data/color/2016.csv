@@ -1,0 +1,306 @@
+,state,catId,catName,category
+0,Buin,1,Blanco,4
+1,Calera de Tango,1,Blanco,1
+2,Cerrillos,1,Blanco,17
+3,Cerro Navia,1,Blanco,7
+4,Colina,1,Blanco,12
+5,Conchalí,1,Blanco,17
+6,El Bosque,1,Blanco,16
+7,El Monte,1,Blanco,1
+8,Estación Central,1,Blanco,17
+9,Huechuraba,1,Blanco,21
+10,Independencia,1,Blanco,18
+11,Isla de Maipo,1,Blanco,1
+12,La Cisterna,1,Blanco,17
+13,La Florida,1,Blanco,40
+14,La Granja,1,Blanco,13
+15,La Pintana,1,Blanco,13
+16,La Reina,1,Blanco,18
+17,Las Condes,1,Blanco,53
+18,Lo Barnechea,1,Blanco,13
+19,Lo Espejo,1,Blanco,11
+20,Lo Prado,1,Blanco,11
+21,Macul,1,Blanco,19
+22,Maipú,1,Blanco,50
+23,Melipilla,1,Blanco,4
+24,Ñuñoa,1,Blanco,47
+25,Otra,1,Blanco,26
+26,Padre Hurtado,1,Blanco,1
+27,Paine,1,Blanco,1
+28,Pedro Aguirre Cerda,1,Blanco,9
+29,Peñalolén,1,Blanco,14
+30,Providencia,1,Blanco,55
+31,Pudahuel,1,Blanco,21
+32,Puente Alto,1,Blanco,15
+33,Quilicura,1,Blanco,32
+34,Quinta Normal,1,Blanco,37
+35,Recoleta,1,Blanco,23
+36,Renca,1,Blanco,9
+37,San Bernardo,1,Blanco,21
+38,San Joaquín,1,Blanco,7
+39,San Miguel,1,Blanco,34
+40,San Ramón,1,Blanco,7
+41,Santiago,1,Blanco,293
+42,Talagante,1,Blanco,3
+43,Vitacura,1,Blanco,43
+44,Lampa,1,Blanco,7
+45,Buin,2,Plateado,1
+46,Calera de Tango,2,Plateado,2
+47,Cerrillos,2,Plateado,10
+48,Cerro Navia,2,Plateado,3
+49,Colina,2,Plateado,3
+50,Conchalí,2,Plateado,6
+51,El Bosque,2,Plateado,10
+52,Estación Central,2,Plateado,7
+53,Huechuraba,2,Plateado,10
+54,Independencia,2,Plateado,11
+55,La Cisterna,2,Plateado,23
+56,La Florida,2,Plateado,45
+57,La Granja,2,Plateado,10
+58,La Pintana,2,Plateado,8
+59,La Reina,2,Plateado,15
+60,Las Condes,2,Plateado,69
+61,Lo Barnechea,2,Plateado,8
+62,Lo Espejo,2,Plateado,4
+63,Lo Prado,2,Plateado,5
+64,Macul,2,Plateado,7
+65,Maipú,2,Plateado,24
+66,Melipilla,2,Plateado,1
+67,Ñuñoa,2,Plateado,44
+68,Otra,2,Plateado,19
+69,Padre Hurtado,2,Plateado,4
+70,Pedro Aguirre Cerda,2,Plateado,4
+71,Peñaflor,2,Plateado,2
+72,Peñalolén,2,Plateado,10
+73,Pirque,2,Plateado,1
+74,Providencia,2,Plateado,60
+75,Pudahuel,2,Plateado,10
+76,Puente Alto,2,Plateado,7
+77,Quilicura,2,Plateado,19
+78,Quinta Normal,2,Plateado,11
+79,Recoleta,2,Plateado,10
+80,Renca,2,Plateado,3
+81,San Bernardo,2,Plateado,11
+82,San Joaquín,2,Plateado,7
+83,San Miguel,2,Plateado,24
+84,San Ramón,2,Plateado,10
+85,Santiago,2,Plateado,260
+86,Vitacura,2,Plateado,32
+87,Lampa,2,Plateado,4
+88,Buin,3,Gris,3
+89,Calera de Tango,3,Gris,3
+90,Cerrillos,3,Gris,9
+91,Cerro Navia,3,Gris,5
+92,Colina,3,Gris,4
+93,Conchalí,3,Gris,5
+94,Curacaví,3,Gris,1
+95,El Bosque,3,Gris,12
+96,Estación Central,3,Gris,7
+97,Huechuraba,3,Gris,11
+98,Independencia,3,Gris,8
+99,La Cisterna,3,Gris,23
+100,La Florida,3,Gris,31
+101,La Granja,3,Gris,10
+102,La Pintana,3,Gris,6
+103,La Reina,3,Gris,14
+104,Las Condes,3,Gris,58
+105,Lo Barnechea,3,Gris,13
+106,Lo Espejo,3,Gris,3
+107,Lo Prado,3,Gris,2
+108,Macul,3,Gris,13
+109,Maipú,3,Gris,23
+110,Ñuñoa,3,Gris,25
+111,Otra,3,Gris,10
+112,Pedro Aguirre Cerda,3,Gris,4
+113,Peñalolén,3,Gris,11
+114,Providencia,3,Gris,35
+115,Pudahuel,3,Gris,13
+116,Puente Alto,3,Gris,14
+117,Quilicura,3,Gris,10
+118,Quinta Normal,3,Gris,8
+119,Recoleta,3,Gris,11
+120,Renca,3,Gris,10
+121,San Bernardo,3,Gris,6
+122,San Joaquín,3,Gris,12
+123,San José de Maipo,3,Gris,1
+124,San Miguel,3,Gris,22
+125,San Ramón,3,Gris,9
+126,Santiago,3,Gris,233
+127,Tiltil,3,Gris,1
+128,Vitacura,3,Gris,35
+129,Lampa,3,Gris,4
+130,Calera de Tango,4,Rojo,1
+131,Cerrillos,4,Rojo,7
+132,Cerro Navia,4,Rojo,2
+133,Colina,4,Rojo,1
+134,Conchalí,4,Rojo,3
+135,El Bosque,4,Rojo,7
+136,Estación Central,4,Rojo,8
+137,Huechuraba,4,Rojo,3
+138,Independencia,4,Rojo,3
+139,La Cisterna,4,Rojo,7
+140,La Florida,4,Rojo,18
+141,La Granja,4,Rojo,3
+142,La Pintana,4,Rojo,2
+143,La Reina,4,Rojo,6
+144,Las Condes,4,Rojo,24
+145,Lo Espejo,4,Rojo,6
+146,Lo Prado,4,Rojo,6
+147,Macul,4,Rojo,3
+148,Maipú,4,Rojo,14
+149,Ñuñoa,4,Rojo,23
+150,Otra,4,Rojo,9
+151,Paine,4,Rojo,2
+152,Pedro Aguirre Cerda,4,Rojo,1
+153,Peñalolén,4,Rojo,9
+154,Pirque,4,Rojo,1
+155,Providencia,4,Rojo,16
+156,Pudahuel,4,Rojo,6
+157,Puente Alto,4,Rojo,10
+158,Quilicura,4,Rojo,7
+159,Quinta Normal,4,Rojo,5
+160,Recoleta,4,Rojo,8
+161,Renca,4,Rojo,1
+162,San Bernardo,4,Rojo,7
+163,San Joaquín,4,Rojo,5
+164,San Miguel,4,Rojo,13
+165,San Ramón,4,Rojo,6
+166,Santiago,4,Rojo,124
+167,Vitacura,4,Rojo,10
+168,Lampa,4,Rojo,2
+169,Buin,5,Negro,3
+170,Calera de Tango,5,Negro,1
+171,Cerrillos,5,Negro,2
+172,Cerro Navia,5,Negro,2
+173,Colina,5,Negro,2
+174,Conchalí,5,Negro,2
+175,El Bosque,5,Negro,7
+176,Estación Central,5,Negro,5
+177,Huechuraba,5,Negro,7
+178,Independencia,5,Negro,9
+179,La Cisterna,5,Negro,6
+180,La Florida,5,Negro,19
+181,La Granja,5,Negro,6
+182,La Pintana,5,Negro,6
+183,La Reina,5,Negro,8
+184,Las Condes,5,Negro,12
+185,Lo Barnechea,5,Negro,5
+186,Lo Espejo,5,Negro,1
+187,Lo Prado,5,Negro,1
+188,Macul,5,Negro,11
+189,Maipú,5,Negro,17
+190,Ñuñoa,5,Negro,16
+191,Otra,5,Negro,6
+192,Pedro Aguirre Cerda,5,Negro,3
+193,Peñalolén,5,Negro,9
+194,Providencia,5,Negro,15
+195,Pudahuel,5,Negro,4
+196,Puente Alto,5,Negro,5
+197,Quilicura,5,Negro,2
+198,Quinta Normal,5,Negro,6
+199,Recoleta,5,Negro,12
+200,Renca,5,Negro,1
+201,San Bernardo,5,Negro,3
+202,San Joaquín,5,Negro,5
+203,San Miguel,5,Negro,10
+204,San Ramón,5,Negro,4
+205,Santiago,5,Negro,125
+206,Tiltil,5,Negro,1
+207,Vitacura,5,Negro,10
+208,Lampa,5,Negro,2
+209,Cerrillos,6,Azul,1
+210,Cerro Navia,6,Azul,1
+211,Conchalí,6,Azul,3
+212,El Bosque,6,Azul,3
+213,Estación Central,6,Azul,3
+214,Huechuraba,6,Azul,3
+215,Independencia,6,Azul,6
+216,La Cisterna,6,Azul,5
+217,La Florida,6,Azul,7
+218,La Granja,6,Azul,1
+219,La Pintana,6,Azul,7
+220,La Reina,6,Azul,4
+221,Las Condes,6,Azul,6
+222,Lo Barnechea,6,Azul,2
+223,Lo Espejo,6,Azul,1
+224,Maipú,6,Azul,12
+225,Melipilla,6,Azul,1
+226,Ñuñoa,6,Azul,13
+227,Otra,6,Azul,5
+228,Padre Hurtado,6,Azul,1
+229,Pedro Aguirre Cerda,6,Azul,2
+230,Peñalolén,6,Azul,3
+231,Providencia,6,Azul,8
+232,Pudahuel,6,Azul,4
+233,Puente Alto,6,Azul,4
+234,Quilicura,6,Azul,3
+235,Recoleta,6,Azul,4
+236,San Bernardo,6,Azul,4
+237,San Miguel,6,Azul,6
+238,San Ramón,6,Azul,3
+239,Santiago,6,Azul,61
+240,Tiltil,6,Azul,1
+241,Vitacura,6,Azul,5
+242,Lampa,6,Azul,2
+243,Colina,7,Beige,1
+244,Conchalí,7,Beige,1
+245,El Bosque,7,Beige,2
+246,Estación Central,7,Beige,1
+247,Independencia,7,Beige,4
+248,La Cisterna,7,Beige,1
+249,La Florida,7,Beige,4
+250,La Granja,7,Beige,1
+251,La Reina,7,Beige,1
+252,Las Condes,7,Beige,5
+253,Macul,7,Beige,3
+254,Maipú,7,Beige,4
+255,Ñuñoa,7,Beige,5
+256,Otra,7,Beige,1
+257,Peñalolén,7,Beige,2
+258,Providencia,7,Beige,6
+259,Puente Alto,7,Beige,1
+260,Quilicura,7,Beige,2
+261,Renca,7,Beige,1
+262,San Bernardo,7,Beige,4
+263,San Joaquín,7,Beige,2
+264,Santiago,7,Beige,27
+265,Vitacura,7,Beige,5
+266,Cerrillos,8,Verde,2
+267,Conchalí,8,Verde,1
+268,El Bosque,8,Verde,1
+269,Huechuraba,8,Verde,1
+270,La Cisterna,8,Verde,1
+271,La Florida,8,Verde,2
+272,La Granja,8,Verde,1
+273,La Pintana,8,Verde,1
+274,La Reina,8,Verde,2
+275,Las Condes,8,Verde,2
+276,Macul,8,Verde,1
+277,Maipú,8,Verde,3
+278,Ñuñoa,8,Verde,3
+279,Otra,8,Verde,2
+280,Pedro Aguirre Cerda,8,Verde,1
+281,Peñalolén,8,Verde,1
+282,Providencia,8,Verde,4
+283,Quilicura,8,Verde,1
+284,Recoleta,8,Verde,1
+285,Renca,8,Verde,1
+286,San Bernardo,8,Verde,3
+287,San Joaquín,8,Verde,1
+288,San Miguel,8,Verde,3
+289,San Ramón,8,Verde,1
+290,Santiago,8,Verde,20
+291,Vitacura,8,Verde,3
+292,Cerrillos,9,Celeste,1
+293,Conchalí,9,Celeste,1
+294,Huechuraba,9,Celeste,1
+295,Independencia,9,Celeste,1
+296,La Reina,9,Celeste,1
+297,Las Condes,9,Celeste,1
+298,Ñuñoa,9,Celeste,1
+299,Providencia,9,Celeste,1
+300,Pudahuel,9,Celeste,1
+301,Puente Alto,9,Celeste,2
+302,San Bernardo,9,Celeste,2
+303,Santiago,9,Celeste,5
+304,Vitacura,9,Celeste,1
