@@ -170,21 +170,31 @@ var Magnifier = function (evt, options) {
                 lens.className = 'magnifier-lens hidden';
                 lens.removeChild(lens.childNodes[0]);
                 lens.style.background = 'url(' + thumb.src + ') no-repeat 0 0 scroll';
-
                 large.id = idx + '-large';
                 large.style.width = data[idx].largeW + 'px';
                 large.style.height = data[idx].largeH + 'px';
-                large.className = 'magnifier-large hidden';
+                large.className = 'magnifier-large';
 
                 if (data[idx].mode === 'inside') {
                     lens.appendChild(large);
+
                 } else {
                     largeWrapper.appendChild(large);
                 }
+
+
             }
 
             lens.style.width = data[idx].lensW + 'px';
             lens.style.height = data[idx].lensH + 'px';
+            
+            d3.select("#thumb-lens")
+            .append('div')
+            .attr("id","yearLens")
+            .attr("class","yearLens")
+            .text(selectedYearFront)
+            
+
         },
         getMousePos = function () {
             var xPos = pos.x - curData.x,
@@ -355,6 +365,7 @@ var Magnifier = function (evt, options) {
                     curLens.className = 'magnifier-loader';
                 } else if (curData.status === 2) {
                     curLens.className = 'magnifier-lens';
+
                     curLarge.className = 'magnifier-large';
                     curLarge.style.left = '-' + curData.largeL + 'px';
                     curLarge.style.top = '-' + curData.largeT + 'px';
@@ -380,6 +391,7 @@ var Magnifier = function (evt, options) {
             }
 
             status = curData.status;
+
         },
         setThumbData = function (thumb, thumbData) {
             var thumbBounds = thumb.getBoundingClientRect(),
@@ -409,6 +421,7 @@ var Magnifier = function (evt, options) {
 
             thumbData.largeW = Math.round(adjusted_width);
             thumbData.largeH = Math.round(adjusted_height);
+
         };
 
     this.attach = function (options) {
@@ -523,6 +536,8 @@ var Magnifier = function (evt, options) {
         };
 
         evt.attach('mouseover', thumb, function (e, src) {
+
+            
             if (curData.status !== 0) {
                 onThumbLeave();
             }
@@ -555,6 +570,7 @@ var Magnifier = function (evt, options) {
 
         evt.attach('mousemove', thumb, function (e, src) {
             isOverThumb = 1;
+
         });
 
         evt.attach('load', thumbObj, function () {
@@ -597,3 +613,4 @@ var Magnifier = function (evt, options) {
         }
     });
 };
+

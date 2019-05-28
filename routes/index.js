@@ -45,4 +45,7 @@ router.get('/magicLenseColor', function(req, res, next) {
   res.render('magicLenseColor', {page:'color', menuId:'magicLense'});
 });
 
+router.get('/juxtaposeColor', function(req, res, next) {
+  res.render('juxtaposeColor', {page:'color', menuId:'yuxtapose'});
+});
 module.exports = router;

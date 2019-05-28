@@ -30,7 +30,11 @@ svg {
   color: white;
 }
 #swipeYear {
-  width: 85%;
+  width: 100%;
+}
+
+#swipeColor {
+  width: 100%;
 }
 
 #traslucentYear {
@@ -41,4 +45,8 @@ svg {
   width: 1800px;
   display: flex;
   overflow: hidden;
+}
+
+#magicLenseYear {
+  width: 100%;
 }

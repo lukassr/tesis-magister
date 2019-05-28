@@ -32,17 +32,29 @@ const categories_mapa = {
 };
 
 var colorScale = d3.scaleOrdinal(d3.schemePaired);
-console.log("colorScale(0)",colorScale(0));
+// a6cee3
+// 1f78b4
+// b2df8a
+// 33a02c
+// fb9a99
+// e31a1c
+// fdbf6f
+// ff7f00
+// cab2d6
+// 6a3d9a
+// ffff99
+// b15928
+
 var categories = {
-  "Blanco":colorScale(0) , 
-  "Plateado":colorScale(1) ,
-  "Gris":colorScale(2) ,
-  "Rojo":colorScale(3) ,
-  "Negro":colorScale(4) ,
-  "Azul":colorScale(5) ,
-  "Beige":colorScale(6) ,
-  "Verde":colorScale(7) ,
-  "Celeste":colorScale(8) ,
+  "Blanco": "#dfe4ea",
+  "Plateado": "#a4b0be",
+  "Gris": "#30336b",
+  "Negro":"#000" ,
+  "Rojo": "#e74c3c",
+  "Azul":"#2980b9" ,
+  "Beige":"#fdbf6f" ,
+  "Verde":"#2ecc71" ,
+  "Celeste":"#a6cee3",
 };
 
 var zoomLevel = 4;
@@ -55,9 +67,11 @@ var totalCatsState = {};
 var myScale = d3.scaleLinear().range([0, 10]);
 
 
-
-
-
+var seed = 2;
+function random() {
+  var x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+}
 
 function startVis(fileData) {
 
@@ -283,6 +297,9 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
     // console.log(colorArray);
   }
 
+
+
+
   var cellSize = calcCellSize(width, height, ncol, nrow);
 
   var gridData = [];
@@ -296,7 +313,7 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
     // iterate for cells/columns inside each row
     for (var col = 0; col < ncol; col++) {
       if (colorArray.length > 0){
-        var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+        var color = colorArray[Math.floor(random() * colorArray.length)];
       
       var indexRow = myIndex(
         catsPerState[data.code],

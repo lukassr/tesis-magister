@@ -59,6 +59,11 @@ var totalCatsState = {};
 
 var myScale = d3.scaleLinear().range([0, 10]);
 
+var seed = 2;
+function random() {
+  var x = Math.sin(seed++) * 10000;
+  return x - Math.floor(x);
+}
 
 
 
@@ -301,7 +306,7 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
     // iterate for cells/columns inside each row
     for (var col = 0; col < ncol; col++) {
       if (colorArray.length > 0){
-        var color = colorArray[Math.floor(Math.random() * colorArray.length)];
+        var color = colorArray[Math.floor(random() * colorArray.length)];
       
       var indexRow = myIndex(
         catsPerState[data.code],
