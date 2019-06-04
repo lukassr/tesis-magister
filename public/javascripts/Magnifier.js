@@ -188,11 +188,12 @@ var Magnifier = function (evt, options) {
             lens.style.width = data[idx].lensW + 'px';
             lens.style.height = data[idx].lensH + 'px';
             
-            d3.select("#thumb-lens")
-            .append('div')
-            .attr("id","yearLens")
-            .attr("class","yearLens")
-            .text(selectedYearFront)
+            // // Year label in Lens
+            // d3.select("#thumb-lens")
+            // .append('div')
+            // .attr("id","yearLens")
+            // .attr("class","yearLens")
+            // .text(selectedYearFront)
             
 
         },

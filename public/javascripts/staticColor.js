@@ -48,8 +48,8 @@ var colorScale = d3.scaleOrdinal(d3.schemePaired);
 var categories = {
   "Blanco": "#dfe4ea",
   "Plateado": "#a4b0be",
-  "Gris": "#30336b",
-  "Negro":"#000" ,
+  "Gris": "#666666",
+  "Negro":"#b15928" ,
   "Rojo": "#e74c3c",
   "Azul":"#2980b9" ,
   "Beige":"#fdbf6f" ,
@@ -67,10 +67,12 @@ var totalCatsState = {};
 var myScale = d3.scaleLinear().range([0, 10]);
 
 
-var seed = 2;
+var seed = 0;
 function random() {
   var x = Math.sin(seed++) * 10000;
   return x - Math.floor(x);
+  seed++;
+  return seed;
 }
 
 function startVis(fileData) {
@@ -116,6 +118,19 @@ d3.csv(fileData, stateData => {
   });
 
 
+  Object.keys(stateOrderedData).forEach(state => {
+    
+    var aux_total = 0;
+    stateOrderedData[state].forEach(total => {
+      aux_total += parseInt(total.category)
+    });
+    aux_total = 100/aux_total;
+    stateOrderedData[state].forEach(total => {
+      total.category = Math.round(total.category * aux_total)+1;
+    });
+  });
+  console.log("stateOrderedData",stateOrderedData);
+
 
   d3.csv("./grid.csv", data => {
     //console.log(data)
@@ -140,8 +155,9 @@ d3.csv(fileData, stateData => {
         .style("text-anchor", "middle")
         .text(d => d.code)
         .attr("font-family", "sans-serif")
-        .attr("font-size", "11px")
-        .attr("opacity", "0.7")
+        .attr("font-size", "13px")
+        .style("font-weight", "bold")
+        .attr("opacity", "0.75")
         .attr("class", d => "label " + d.code)
         .each(d => {
           subGridData = getGridData2(
@@ -274,8 +290,10 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
   }
 
   catsPerState[data.code] = scode.sort(function(a, b) {
-    return b.category - a.category;
+    return a.catId - b.catId;
   });
+  console.log("data.code", data.code);
+  console.log("CATSPRERSTATE", catsPerState);
 
   var colorArray = [];
   scode.forEach(row => {
@@ -289,6 +307,11 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
     }
   });
 
+  
+
+  console.log("SCODE",scode)
+  console.log("totalCatState",totalCatsState);
+  console.log("colorarray.length", colorArray.length);
 
   if (!logged) {
     logged = true;
@@ -301,20 +324,26 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
 
 
   var cellSize = calcCellSize(width, height, ncol, nrow);
+  console.log("cellsize", cellSize);
+
 
   var gridData = [];
   var xpos = 1; // starting xpos and ypos at 1 so the stroke will show when we make the grid below
   var ypos = 1;
-
+  
   // iterate for rows
   for (var row = 0; row < nrow; row++) {
     gridData.push([]);
+    console.log("colorArray", colorArray);
 
     // iterate for cells/columns inside each row
     for (var col = 0; col < ncol; col++) {
-      if (colorArray.length > 0){
-        var color = colorArray[Math.floor(random() * colorArray.length)];
-      
+      if ((colorArray.length > 0)) {
+        // var color = colorArray[Math.min(col, colorArray.length - 1)];   
+        var color = colorArray.pop();
+        // var color = colorArray[Math.floor(col/(10)*(colorArray.length))];   
+        // var color = colorArray[Math.floor(Math.random() * colorArray.length)];   
+        console.log("color", color);    
       var indexRow = myIndex(
         catsPerState[data.code],
         categories_mapa[color.catId]
@@ -328,11 +357,9 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
         index: indexRow
       });
     }
-
       // increment x position (moving over by 50)
       xpos += cellSize;
     }
-
     // reset x position after a row is complete
     xpos = 1;
     // increment y position (moving down by 50)

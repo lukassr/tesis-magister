@@ -1,5 +1,5 @@
 //var adjusted_width = limitant * 940
-var adjusted_width = "100%";
+var adjusted_width = "110%";
 //var adjusted_height = limitant * 626
 var adjusted_height = 1000;
 
@@ -99,6 +99,55 @@ d3.select("#opacity")
     .ease(d3.easeLinear)
     .style("opacity", 1 - opacitySelected - 0.1);
   });
+
+  d3.select("#switch")
+    .on("click", function () {
+      if (d3.select(this).text() == "Change to 100") {
+        d3.select(this).text("Change to 0")
+
+        d3.select("#imageFront")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 99);
+
+        d3.select("#textFront")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 99);
+
+        d3.select("#textBack")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 0.1);
+
+      }
+      else {
+        d3.select(this).text("Change to 100")
+
+        d3.select("#imageFront")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 0.1);
+
+        d3.select("#textFront")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 0.1);
+
+        d3.select("#textBack")
+        .transition()
+        .duration(10)
+        .ease(d3.easeLinear)
+        .style("opacity", 99);
+      }
+    })
+
+ 
 
 
 d3.select("#yearSelectorFront")

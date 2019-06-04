@@ -136,8 +136,9 @@ d3.csv(fileData, stateData => {
         .style("text-anchor", "middle")
         .text(d => d.code)
         .attr("font-family", "sans-serif")
-        .attr("font-size", "11px")
-        .attr("opacity", "0.7")
+        .attr("font-size", "13px")
+        .style("font-weight", "bold")
+        .attr("opacity", "0.75")
         .attr("class", d => "label " + d.code)
         .each(d => {
           subGridData = getGridData2(

@@ -1,6 +1,6 @@
 
 //var adjusted_width = limitant * 940
-var adjusted_width = "100%";
+var adjusted_width = "140%";
 //var adjusted_height = limitant * 626
 var adjusted_height = 1000;
 
@@ -10,7 +10,7 @@ var pathData = "../images/color/";
 var selectedYearFront = "2017";
 var selectedYearBack = "2016";
 var opacitySelected = 0.5;
-var squareWidth = 70;
+var squareWidth = 90;
 function startVis(selectedYearFront, selectedYearBack, opacitySelected){
 
   var zoom = d3.zoom()
@@ -21,14 +21,14 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
   var svg = d3.select("#juxtaposeYear")
   .append("svg")
   .attr("id", "svg")
-  .attr("width", "50%")
-  .attr("height", 900)
+  .attr("width", "120%")
+  .attr("height", 800)
   
   var svg2 = d3.select("#juxtaposeYear")
   .append("svg")
   .attr("id", "svg2")
-  .attr("width", "50%")
-  .attr("height", 900);
+  .attr("width", "120%")
+  .attr("height", 800);
 
 
 
@@ -39,8 +39,8 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
     .append("svg:image")
     .attr("id", "imageBack")
     .attr("xlink:href", pathData+selectedYearBack+'.png')
-    .attr("width", "100%")
-    .attr("height", "100%")
+    .attr("width", "120%")
+    .attr("height", "120%")
     .style("opacity", 1)
     .call(zoom);
 
@@ -102,8 +102,8 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
   .append("svg:image")
   .attr("id", "imageFront")
   .attr("xlink:href", pathData+selectedYearFront+'.png')
-  .attr("width", "100%")
-  .attr("height", "100%")
+  .attr("width", "120%")
+  .attr("height", "120%")
   .style("opacity", 1)
   .call(zoom);
 

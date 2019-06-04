@@ -29,6 +29,10 @@ svg {
 #download { 
   color: white;
 }
+
+#switch { 
+  color: white;
+}
 #swipeYear {
   width: 100%;
 }
@@ -42,7 +46,7 @@ svg {
 }
 
 #juxtaposeYear {
-  width: 1800px;
+  width: 2000px;
   display: flex;
   overflow: hidden;
 }
