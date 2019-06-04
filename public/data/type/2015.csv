@@ -1,0 +1,220 @@
+,state,catId,catName,category
+0,Buin,1,Automovil,1
+1,Calera de Tango,1,Automovil,2
+2,Cerrillos,1,Automovil,18
+3,Cerro Navia,1,Automovil,11
+4,Colina,1,Automovil,2
+5,Conchalí,1,Automovil,21
+6,Curacaví,1,Automovil,1
+7,El Bosque,1,Automovil,34
+8,Estación Central,1,Automovil,33
+9,Huechuraba,1,Automovil,40
+10,Independencia,1,Automovil,21
+11,La Cisterna,1,Automovil,40
+12,La Florida,1,Automovil,91
+13,La Granja,1,Automovil,11
+14,La Pintana,1,Automovil,21
+15,La Reina,1,Automovil,39
+16,Las Condes,1,Automovil,104
+17,Lo Barnechea,1,Automovil,34
+18,Lo Espejo,1,Automovil,4
+19,Lo Prado,1,Automovil,11
+20,Macul,1,Automovil,38
+21,Maipú,1,Automovil,84
+22,Melipilla,1,Automovil,3
+23,Ñuñoa,1,Automovil,143
+24,Otra,1,Automovil,16
+25,Pedro Aguirre Cerda,1,Automovil,7
+26,Peñaflor,1,Automovil,4
+27,Peñalolén,1,Automovil,30
+28,Providencia,1,Automovil,96
+29,Pudahuel,1,Automovil,35
+30,Puente Alto,1,Automovil,30
+31,Quilicura,1,Automovil,30
+32,Quinta Normal,1,Automovil,15
+33,Recoleta,1,Automovil,25
+34,Renca,1,Automovil,12
+35,San Bernardo,1,Automovil,22
+36,San Joaquín,1,Automovil,14
+37,San Miguel,1,Automovil,51
+38,San Ramón,1,Automovil,16
+39,Santiago,1,Automovil,707
+40,Talagante,1,Automovil,1
+41,Vitacura,1,Automovil,95
+42,Lampa,1,Automovil,5
+43,Calera de Tango,2,Station Wagon,2
+44,Cerrillos,2,Station Wagon,10
+45,Cerro Navia,2,Station Wagon,5
+46,Colina,2,Station Wagon,4
+47,Conchalí,2,Station Wagon,10
+48,El Bosque,2,Station Wagon,23
+49,Estación Central,2,Station Wagon,8
+50,Huechuraba,2,Station Wagon,18
+51,Independencia,2,Station Wagon,12
+52,La Cisterna,2,Station Wagon,35
+53,La Florida,2,Station Wagon,73
+54,La Granja,2,Station Wagon,13
+55,La Pintana,2,Station Wagon,3
+56,La Reina,2,Station Wagon,35
+57,Las Condes,2,Station Wagon,102
+58,Lo Barnechea,2,Station Wagon,44
+59,Lo Espejo,2,Station Wagon,5
+60,Lo Prado,2,Station Wagon,6
+61,Macul,2,Station Wagon,23
+62,Maipú,2,Station Wagon,36
+63,Melipilla,2,Station Wagon,1
+64,Ñuñoa,2,Station Wagon,53
+65,Otra,2,Station Wagon,17
+66,Pedro Aguirre Cerda,2,Station Wagon,1
+67,Peñalolén,2,Station Wagon,25
+68,Providencia,2,Station Wagon,42
+69,Pudahuel,2,Station Wagon,23
+70,Puente Alto,2,Station Wagon,11
+71,Quilicura,2,Station Wagon,18
+72,Quinta Normal,2,Station Wagon,11
+73,Recoleta,2,Station Wagon,9
+74,Renca,2,Station Wagon,5
+75,San Bernardo,2,Station Wagon,11
+76,San Joaquín,2,Station Wagon,6
+77,San Miguel,2,Station Wagon,27
+78,San Ramón,2,Station Wagon,6
+79,Santiago,2,Station Wagon,331
+80,Talagante,2,Station Wagon,4
+81,Vitacura,2,Station Wagon,95
+82,Lampa,2,Station Wagon,2
+83,Buin,3,Camioneta,1
+84,Cerrillos,3,Camioneta,4
+85,Cerro Navia,3,Camioneta,2
+86,Colina,3,Camioneta,2
+87,El Bosque,3,Camioneta,6
+88,Estación Central,3,Camioneta,9
+89,Huechuraba,3,Camioneta,4
+90,Independencia,3,Camioneta,7
+91,La Cisterna,3,Camioneta,10
+92,La Florida,3,Camioneta,14
+93,La Granja,3,Camioneta,3
+94,La Pintana,3,Camioneta,9
+95,La Reina,3,Camioneta,10
+96,Las Condes,3,Camioneta,38
+97,Lo Barnechea,3,Camioneta,10
+98,Lo Espejo,3,Camioneta,3
+99,Lo Prado,3,Camioneta,4
+100,Macul,3,Camioneta,3
+101,Maipú,3,Camioneta,13
+102,Melipilla,3,Camioneta,3
+103,Ñuñoa,3,Camioneta,27
+104,Otra,3,Camioneta,7
+105,Padre Hurtado,3,Camioneta,1
+106,Pedro Aguirre Cerda,3,Camioneta,3
+107,Peñaflor,3,Camioneta,2
+108,Peñalolén,3,Camioneta,7
+109,Pirque,3,Camioneta,2
+110,Providencia,3,Camioneta,25
+111,Pudahuel,3,Camioneta,8
+112,Puente Alto,3,Camioneta,7
+113,Quilicura,3,Camioneta,10
+114,Quinta Normal,3,Camioneta,33
+115,Recoleta,3,Camioneta,11
+116,Renca,3,Camioneta,4
+117,San Bernardo,3,Camioneta,7
+118,San Joaquín,3,Camioneta,4
+119,San Miguel,3,Camioneta,11
+120,San Ramón,3,Camioneta,2
+121,Santiago,3,Camioneta,122
+122,Talagante,3,Camioneta,2
+123,Tiltil,3,Camioneta,1
+124,Vitacura,3,Camioneta,11
+125,Lampa,3,Camioneta,4
+126,Buin,4,Camiones,2
+127,Calera de Tango,4,Camiones,3
+128,Cerrillos,4,Camiones,5
+129,Colina,4,Camiones,2
+130,Conchalí,4,Camiones,2
+131,Curacaví,4,Camiones,2
+132,Estación Central,4,Camiones,1
+133,Huechuraba,4,Camiones,3
+134,Independencia,4,Camiones,4
+135,La Cisterna,4,Camiones,1
+136,La Florida,4,Camiones,1
+137,Las Condes,4,Camiones,1
+138,Lo Espejo,4,Camiones,1
+139,Maipú,4,Camiones,5
+140,Melipilla,4,Camiones,4
+141,Ñuñoa,4,Camiones,1
+142,Otra,4,Camiones,4
+143,Padre Hurtado,4,Camiones,2
+144,Paine,4,Camiones,1
+145,Peñalolén,4,Camiones,1
+146,Providencia,4,Camiones,1
+147,Pudahuel,4,Camiones,8
+148,Puente Alto,4,Camiones,2
+149,Quilicura,4,Camiones,5
+150,Quinta Normal,4,Camiones,1
+151,Renca,4,Camiones,8
+152,San Bernardo,4,Camiones,8
+153,San Joaquín,4,Camiones,1
+154,San Miguel,4,Camiones,1
+155,Santiago,4,Camiones,32
+156,Talagante,4,Camiones,1
+157,Vitacura,4,Camiones,1
+158,Lampa,4,Camiones,3
+159,Calera de Tango,5,Furgon,1
+160,Cerro Navia,5,Furgon,1
+161,El Bosque,5,Furgon,1
+162,Estación Central,5,Furgon,3
+163,Huechuraba,5,Furgon,1
+164,Independencia,5,Furgon,1
+165,La Cisterna,5,Furgon,2
+166,La Reina,5,Furgon,1
+167,Las Condes,5,Furgon,2
+168,Lo Prado,5,Furgon,1
+169,Macul,5,Furgon,1
+170,Maipú,5,Furgon,1
+171,Ñuñoa,5,Furgon,4
+172,Peñalolén,5,Furgon,1
+173,Providencia,5,Furgon,5
+174,Pudahuel,5,Furgon,3
+175,Quilicura,5,Furgon,2
+176,Quinta Normal,5,Furgon,2
+177,Recoleta,5,Furgon,6
+178,Renca,5,Furgon,2
+179,San Joaquín,5,Furgon,2
+180,San Miguel,5,Furgon,5
+181,San Ramón,5,Furgon,2
+182,Santiago,5,Furgon,18
+183,Vitacura,5,Furgon,1
+184,Calera de Tango,8,Semiremolques,1
+185,Colina,8,Semiremolques,2
+186,Otra,8,Semiremolques,1
+187,Pudahuel,8,Semiremolques,2
+188,Quilicura,8,Semiremolques,4
+189,San Bernardo,8,Semiremolques,3
+190,Santiago,8,Semiremolques,8
+191,Lampa,8,Semiremolques,4
+192,La Florida,9,Motocicletas,1
+193,Las Condes,9,Motocicletas,4
+194,Lo Barnechea,9,Motocicletas,1
+195,Maipú,9,Motocicletas,1
+196,Providencia,9,Motocicletas,5
+197,Quilicura,9,Motocicletas,1
+198,Recoleta,9,Motocicletas,1
+199,Renca,9,Motocicletas,1
+200,San Miguel,9,Motocicletas,1
+201,Santiago,9,Motocicletas,6
+202,Vitacura,9,Motocicletas,1
+203,La Cisterna,6,Todo Terreno,1
+204,La Florida,6,Todo Terreno,1
+205,Las Condes,6,Todo Terreno,2
+206,Lo Barnechea,6,Todo Terreno,1
+207,San Bernardo,6,Todo Terreno,1
+208,Santiago,6,Todo Terreno,9
+209,Vitacura,6,Todo Terreno,2
+210,Lo Prado,7,Minibus,1
+211,Ñuñoa,7,Minibus,1
+212,Puente Alto,7,Minibus,1
+213,Recoleta,7,Minibus,1
+214,San Bernardo,7,Minibus,1
+215,Santiago,7,Minibus,2
+216,Lampa,7,Minibus,1
+217,La Florida,10,Buses y Taxibuses,1
+218,Santiago,10,Buses y Taxibuses,1

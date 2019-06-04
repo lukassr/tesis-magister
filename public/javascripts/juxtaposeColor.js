@@ -10,7 +10,7 @@ var pathData = "../images/color/";
 var selectedYearFront = "2017";
 var selectedYearBack = "2016";
 var opacitySelected = 0.5;
-var squareWidth = 90;
+var squareWidth = 100;
 function startVis(selectedYearFront, selectedYearBack, opacitySelected){
 
   var zoom = d3.zoom()

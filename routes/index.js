@@ -48,4 +48,19 @@ router.get('/magicLenseColor', function(req, res, next) {
 router.get('/juxtaposeColor', function(req, res, next) {
   res.render('juxtaposeColor', {page:'color', menuId:'yuxtapose'});
 });
+
+// TYPE
+router.get('/staticType', function(req, res, next) {
+  res.render('staticType', {page:'staticType', menuId:'static'});
+});
+
+
+
+
+// BRAND
+router.get('/staticBrand', function(req, res, next) {
+  res.render('staticBrand', {page:'staticBrand', menuId:'static'});
+});
+
+
 module.exports = router;

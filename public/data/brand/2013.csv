@@ -1,0 +1,300 @@
+,state,catId,catName,category
+0,Santiago,1,Hyundai,198
+1,Providencia,1,Hyundai,57
+2,Las Condes,1,Hyundai,53
+3,Vitacura,1,Hyundai,45
+4,Ñuñoa,1,Hyundai,38
+5,Lo Barnechea,1,Hyundai,28
+6,Quilicura,1,Hyundai,27
+7,Maipú,1,Hyundai,27
+8,San Miguel,1,Hyundai,14
+9,Estación Central,1,Hyundai,14
+10,La Florida,1,Hyundai,12
+11,Recoleta,1,Hyundai,11
+12,Quinta Normal,1,Hyundai,11
+13,La Reina,1,Hyundai,11
+14,Huechuraba,1,Hyundai,11
+15,Macul,1,Hyundai,10
+16,Puente Alto,1,Hyundai,10
+17,Peñalolén,1,Hyundai,9
+18,San Joaquín,1,Hyundai,8
+19,Conchalí,1,Hyundai,7
+20,Cerrillos,1,Hyundai,6
+21,Pudahuel,1,Hyundai,5
+22,Lo Prado,1,Hyundai,5
+23,Independencia,1,Hyundai,4
+24,La Cisterna,1,Hyundai,4
+25,San Ramón,1,Hyundai,3
+26,Pedro Aguirre Cerda,1,Hyundai,2
+27,Lo Espejo,1,Hyundai,2
+28,La Granja,1,Hyundai,2
+29,Otra,1,Hyundai,2
+30,Cerro Navia,1,Hyundai,2
+31,Renca,1,Hyundai,2
+32,San Bernardo,1,Hyundai,2
+33,Talagante,1,Hyundai,1
+34,Lampa,1,Hyundai,1
+35,Curacaví,1,Hyundai,1
+36,El Bosque,1,Hyundai,1
+37,Colina,1,Hyundai,1
+38,La Pintana,1,Hyundai,1
+39,Santiago,2,Toyota,146
+40,Providencia,2,Toyota,52
+41,Vitacura,2,Toyota,42
+42,Las Condes,2,Toyota,38
+43,Ñuñoa,2,Toyota,22
+44,Lo Barnechea,2,Toyota,18
+45,La Florida,2,Toyota,16
+46,Maipú,2,Toyota,15
+47,La Reina,2,Toyota,12
+48,San Miguel,2,Toyota,11
+49,Huechuraba,2,Toyota,9
+50,Quilicura,2,Toyota,6
+51,Macul,2,Toyota,6
+52,La Cisterna,2,Toyota,6
+53,San Joaquín,2,Toyota,5
+54,Peñalolén,2,Toyota,5
+55,Estación Central,2,Toyota,4
+56,Cerrillos,2,Toyota,4
+57,Puente Alto,2,Toyota,4
+58,Recoleta,2,Toyota,3
+59,San Bernardo,2,Toyota,3
+60,Renca,2,Toyota,2
+61,Colina,2,Toyota,2
+62,Pudahuel,2,Toyota,2
+63,Independencia,2,Toyota,2
+64,Quinta Normal,2,Toyota,2
+65,El Bosque,2,Toyota,2
+66,Conchalí,2,Toyota,2
+67,Otra,2,Toyota,1
+68,Pedro Aguirre Cerda,2,Toyota,1
+69,Lo Espejo,2,Toyota,1
+70,Cerro Navia,2,Toyota,1
+71,Santiago,3,Chevrolet,132
+72,Providencia,3,Chevrolet,25
+73,Ñuñoa,3,Chevrolet,20
+74,La Florida,3,Chevrolet,20
+75,Maipú,3,Chevrolet,18
+76,Las Condes,3,Chevrolet,17
+77,San Bernardo,3,Chevrolet,12
+78,Vitacura,3,Chevrolet,11
+79,Peñalolén,3,Chevrolet,9
+80,San Miguel,3,Chevrolet,8
+81,Puente Alto,3,Chevrolet,8
+82,El Bosque,3,Chevrolet,8
+83,Conchalí,3,Chevrolet,7
+84,Pudahuel,3,Chevrolet,7
+85,Quilicura,3,Chevrolet,7
+86,Cerrillos,3,Chevrolet,6
+87,San Joaquín,3,Chevrolet,6
+88,Lo Espejo,3,Chevrolet,5
+89,Renca,3,Chevrolet,5
+90,La Cisterna,3,Chevrolet,5
+91,Huechuraba,3,Chevrolet,5
+92,Quinta Normal,3,Chevrolet,5
+93,La Granja,3,Chevrolet,4
+94,Macul,3,Chevrolet,4
+95,La Reina,3,Chevrolet,4
+96,Recoleta,3,Chevrolet,4
+97,Melipilla,3,Chevrolet,4
+98,Otra,3,Chevrolet,3
+99,Lo Barnechea,3,Chevrolet,3
+100,Pedro Aguirre Cerda,3,Chevrolet,3
+101,Cerro Navia,3,Chevrolet,3
+102,Independencia,3,Chevrolet,3
+103,Estación Central,3,Chevrolet,2
+104,Colina,3,Chevrolet,2
+105,La Pintana,3,Chevrolet,2
+106,Lo Prado,3,Chevrolet,1
+107,Lampa,3,Chevrolet,1
+108,Pirque,3,Chevrolet,1
+109,Buin,3,Chevrolet,1
+110,Paine,3,Chevrolet,1
+111,San Ramón,3,Chevrolet,1
+112,Santiago,4,Kia,120
+113,Ñuñoa,4,Kia,20
+114,Providencia,4,Kia,20
+115,Vitacura,4,Kia,18
+116,Las Condes,4,Kia,17
+117,La Florida,4,Kia,16
+118,Maipú,4,Kia,16
+119,Puente Alto,4,Kia,9
+120,Recoleta,4,Kia,8
+121,Lo Barnechea,4,Kia,8
+122,Huechuraba,4,Kia,8
+123,Quinta Normal,4,Kia,7
+124,Quilicura,4,Kia,7
+125,Otra,4,Kia,6
+126,Estación Central,4,Kia,6
+127,San Miguel,4,Kia,6
+128,San Bernardo,4,Kia,4
+129,Macul,4,Kia,4
+130,Peñalolén,4,Kia,4
+131,Independencia,4,Kia,3
+132,Cerrillos,4,Kia,3
+133,Pudahuel,4,Kia,3
+134,Renca,4,Kia,2
+135,San Joaquín,4,Kia,2
+136,El Bosque,4,Kia,2
+137,La Cisterna,4,Kia,2
+138,La Reina,4,Kia,2
+139,Lampa,4,Kia,2
+140,Lo Prado,4,Kia,2
+141,San Ramón,4,Kia,1
+142,Isla de Maipo,4,Kia,1
+143,Lo Espejo,4,Kia,1
+144,Cerro Navia,4,Kia,1
+145,Paine,4,Kia,1
+146,La Pintana,4,Kia,1
+147,La Granja,4,Kia,1
+148,Santiago,5,Nissan,69
+149,Las Condes,5,Nissan,22
+150,Vitacura,5,Nissan,20
+151,Ñuñoa,5,Nissan,16
+152,La Florida,5,Nissan,13
+153,Maipú,5,Nissan,9
+154,Recoleta,5,Nissan,9
+155,Providencia,5,Nissan,8
+156,La Reina,5,Nissan,8
+157,La Cisterna,5,Nissan,7
+158,San Miguel,5,Nissan,7
+159,Huechuraba,5,Nissan,6
+160,San Bernardo,5,Nissan,5
+161,Estación Central,5,Nissan,5
+162,Pudahuel,5,Nissan,5
+163,Quilicura,5,Nissan,4
+164,El Bosque,5,Nissan,4
+165,Quinta Normal,5,Nissan,4
+166,Cerrillos,5,Nissan,4
+167,La Granja,5,Nissan,3
+168,San Joaquín,5,Nissan,3
+169,La Pintana,5,Nissan,3
+170,Conchalí,5,Nissan,3
+171,Macul,5,Nissan,2
+172,Colina,5,Nissan,2
+173,Pedro Aguirre Cerda,5,Nissan,2
+174,Puente Alto,5,Nissan,2
+175,Independencia,5,Nissan,2
+176,San José de Maipo,5,Nissan,1
+177,Peñalolén,5,Nissan,1
+178,Renca,5,Nissan,1
+179,Buin,5,Nissan,1
+180,Lo Barnechea,5,Nissan,1
+181,Otra,5,Nissan,1
+182,Paine,5,Nissan,1
+183,Santiago,7,Samsung,65
+184,Providencia,7,Samsung,41
+185,Recoleta,7,Samsung,21
+186,Vitacura,7,Samsung,21
+187,Las Condes,7,Samsung,18
+188,Ñuñoa,7,Samsung,14
+189,Huechuraba,7,Samsung,13
+190,Independencia,7,Samsung,11
+191,La Florida,7,Samsung,7
+192,Conchalí,7,Samsung,7
+193,Quilicura,7,Samsung,5
+194,Pudahuel,7,Samsung,5
+195,Maipú,7,Samsung,4
+196,El Bosque,7,Samsung,3
+197,Lo Espejo,7,Samsung,2
+198,Estación Central,7,Samsung,2
+199,Lo Barnechea,7,Samsung,2
+200,Puente Alto,7,Samsung,1
+201,Pirque,7,Samsung,1
+202,San Miguel,7,Samsung,1
+203,Otra,7,Samsung,1
+204,La Granja,7,Samsung,1
+205,La Pintana,7,Samsung,1
+206,Renca,7,Samsung,1
+207,Santiago,6,Suzuki,62
+208,Las Condes,6,Suzuki,21
+209,Providencia,6,Suzuki,18
+210,Vitacura,6,Suzuki,11
+211,Maipú,6,Suzuki,11
+212,Ñuñoa,6,Suzuki,11
+213,San Miguel,6,Suzuki,6
+214,Huechuraba,6,Suzuki,6
+215,La Reina,6,Suzuki,6
+216,La Florida,6,Suzuki,6
+217,Peñalolén,6,Suzuki,4
+218,Puente Alto,6,Suzuki,4
+219,Recoleta,6,Suzuki,3
+220,Estación Central,6,Suzuki,3
+221,El Bosque,6,Suzuki,3
+222,Macul,6,Suzuki,3
+223,Lo Barnechea,6,Suzuki,3
+224,Pudahuel,6,Suzuki,2
+225,San Joaquín,6,Suzuki,2
+226,La Cisterna,6,Suzuki,2
+227,San Bernardo,6,Suzuki,2
+228,Renca,6,Suzuki,1
+229,Lampa,6,Suzuki,1
+230,Talagante,6,Suzuki,1
+231,Quinta Normal,6,Suzuki,1
+232,La Pintana,6,Suzuki,1
+233,Quilicura,6,Suzuki,1
+234,Independencia,6,Suzuki,1
+235,Cerro Navia,6,Suzuki,1
+236,Pedro Aguirre Cerda,6,Suzuki,1
+237,Santiago,8,Subaru,25
+238,Las Condes,8,Subaru,24
+239,Vitacura,8,Subaru,20
+240,Providencia,8,Subaru,17
+241,Lo Barnechea,8,Subaru,8
+242,La Reina,8,Subaru,6
+243,La Florida,8,Subaru,3
+244,Quilicura,8,Subaru,2
+245,San Joaquín,8,Subaru,2
+246,Huechuraba,8,Subaru,2
+247,Paine,8,Subaru,1
+248,Talagante,8,Subaru,1
+249,La Cisterna,8,Subaru,1
+250,Independencia,8,Subaru,1
+251,Recoleta,8,Subaru,1
+252,Maipú,8,Subaru,1
+253,Ñuñoa,8,Subaru,1
+254,Santiago,10,Ford,26
+255,Las Condes,10,Ford,7
+256,Providencia,10,Ford,5
+257,Vitacura,10,Ford,5
+258,Maipú,10,Ford,3
+259,Estación Central,10,Ford,2
+260,Quilicura,10,Ford,2
+261,San Bernardo,10,Ford,2
+262,Pudahuel,10,Ford,1
+263,La Florida,10,Ford,1
+264,Quinta Normal,10,Ford,1
+265,Melipilla,10,Ford,1
+266,Conchalí,10,Ford,1
+267,Otra,10,Ford,1
+268,Lo Barnechea,10,Ford,1
+269,Renca,10,Ford,1
+270,Recoleta,10,Ford,1
+271,San Miguel,10,Ford,1
+272,La Cisterna,10,Ford,1
+273,Talagante,10,Ford,1
+274,Huechuraba,10,Ford,1
+275,Calera de Tango,10,Ford,1
+276,Peñalolén,10,Ford,1
+277,Pedro Aguirre Cerda,10,Ford,1
+278,Peñaflor,10,Ford,1
+279,Santiago,9,Mazda,23
+280,Las Condes,9,Mazda,17
+281,Vitacura,9,Mazda,5
+282,La Florida,9,Mazda,4
+283,Ñuñoa,9,Mazda,3
+284,Renca,9,Mazda,2
+285,Macul,9,Mazda,2
+286,Providencia,9,Mazda,1
+287,La Granja,9,Mazda,1
+288,Independencia,9,Mazda,1
+289,Colina,9,Mazda,1
+290,Pedro Aguirre Cerda,9,Mazda,1
+291,El Bosque,9,Mazda,1
+292,Recoleta,9,Mazda,1
+293,Estación Central,9,Mazda,1
+294,San Joaquín,9,Mazda,1
+295,Maipú,9,Mazda,1
+296,La Cisterna,9,Mazda,1
+297,Calera de Tango,9,Mazda,1
+298,Lo Espejo,9,Mazda,1
