@@ -5,7 +5,7 @@ var adjusted_height = 1000;
 
 
 
-var pathData = "../images/Type/";
+var pathData = "../images/type/";
 var selectedYearFront = "2017";
 var selectedYearBack = "2016";
 var opacitySelected = 0.5;
