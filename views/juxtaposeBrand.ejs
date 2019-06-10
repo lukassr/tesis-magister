@@ -7,13 +7,13 @@
    <% include partials/menu %>
   <main>
       <div class="row">
-    <div class="col-sm-2">  
+    <div class="col-sm-1">  
       <div class="card">
         <div class="card-header">
           Select Year
         </div>
         <div class="card-body">
-            <p> Back:
+            <p> Left:
                 <select id="yearSelectorBack">
                     <option value="2017"> 2017</option> 
                     <option value="2016" selected="selected">2016</option>
@@ -24,7 +24,7 @@
                     <option value="2011">2011</option>
                 </select>
             </p> 
-            <p> Front: 
+            <p> Right: 
                 <select id="yearSelectorFront">
                     <option value="2017" selected="selected">2017</option> 
                     <option value="2016">2016</option>
@@ -38,33 +38,19 @@
         </div>
       </div>
       <br>
-      <div class="card">
-        <div class="card-header">
-          Change Opacity
-        </div>
-        <div class="card-body">
-            <p>
-                <a id="left"></a>
-                <input id ="opacity" type="range" min="0" max="99" value="50" style="width: 60%; margin-right: 10px;"/>
-                <a id="right"></a>
-            </p>
-            <div class="card-body">
-              <a id="switch" class="btn btn-primary"></a>
-            </div>
-
-        </div>
-
-      </div>
     </div>
     <div class="col-sm-10">  
       <div class="card">
         <div class="card-header">
-          Traslucent Overlay Color Visualization
+          Juxtapose Brand Visualization
         </div>
         <div class="card-body">
-          <div id="traslucentYear">
+          <div>
+
+            <div id="juxtaposeYear">
+            </div>
           </div>
-      </div>
+          </div>
     </div>
   </div>
 </div>
@@ -76,5 +62,5 @@
   </main>
 </body>
 <% include partials/script %>
-<script src="./javascripts/traslucentColor.js"></script>
+<script src="./javascripts/juxtaposeBrand.js"></script>
 </html>

@@ -290,10 +290,10 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
   }
 
   catsPerState[data.code] = scode.sort(function(a, b) {
-    return a.catId - b.catId;
+    return a.category - b.category;
   });
-  console.log("data.code", data.code);
-  console.log("CATSPRERSTATE", catsPerState);
+  // console.log("data.code", data.code);
+  // console.log("CATSPRERSTATE", catsPerState);
 
   var colorArray = [];
   scode.forEach(row => {
@@ -309,9 +309,9 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
 
   
 
-  console.log("SCODE",scode)
-  console.log("totalCatState",totalCatsState);
-  console.log("colorarray.length", colorArray.length);
+  // console.log("SCODE",scode)
+  // console.log("totalCatState",totalCatsState);
+  // console.log("colorarray.length", colorArray.length);
 
   if (!logged) {
     logged = true;
@@ -324,7 +324,6 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
 
 
   var cellSize = calcCellSize(width, height, ncol, nrow);
-  console.log("cellsize", cellSize);
 
 
   var gridData = [];
@@ -334,7 +333,6 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
   // iterate for rows
   for (var row = 0; row < nrow; row++) {
     gridData.push([]);
-    console.log("colorArray", colorArray);
 
     // iterate for cells/columns inside each row
     for (var col = 0; col < ncol; col++) {
@@ -343,7 +341,6 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
         var color = colorArray.pop();
         // var color = colorArray[Math.floor(col/(10)*(colorArray.length))];   
         // var color = colorArray[Math.floor(Math.random() * colorArray.length)];   
-        console.log("color", color);    
       var indexRow = myIndex(
         catsPerState[data.code],
         categories_mapa[color.catId]
