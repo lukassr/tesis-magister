@@ -108,18 +108,39 @@ d3.csv(fileData, stateData => {
   });
 
 
+  var maxState = -1;
+  var minState = 100000;
   Object.keys(stateOrderedData).forEach(state => {
+    console.log(stateOrderedData[state]);
     
     var aux_total = 0;
     stateOrderedData[state].forEach(total => {
       aux_total += parseInt(total.category)
     });
-    aux_total = 100/aux_total;
+    var aux_total2 = 100/aux_total;
+    if (aux_total>=maxState) maxState = aux_total;
+    if ((aux_total < minState) && (aux_total >= 50)) minState = aux_total;
     stateOrderedData[state].forEach(total => {
-      total.category = Math.round(total.category * aux_total)+1;
+      total.totalState = aux_total;
+      total.category = Math.round(total.category * aux_total2)+1;
+
     });
   });
+
+  Object.keys(stateOrderedData).forEach(state => {
+    stateOrderedData[state].forEach(total => {
+      total.maxState = maxState;
+      total.minState = minState;
+    });
+    });
+
+
   console.log("stateOrderedData",stateOrderedData);
+
+  var saturationScale = d3.scaleLinear()
+    .domain([minState, maxState/10,maxState])
+    .range([0.4,0.7,0.9])
+    .clamp(true);
 
 
   d3.csv("./grid.csv", data => {
@@ -181,13 +202,16 @@ d3.csv(fileData, stateData => {
               e.realx = realx;
               const realy = d.y + e.y - (cellSize / 2 + 5) + 1;
               e.realy = realy;
+              console.log("E",e)
             })
             .attr("x", e => e.realx - 3)
             .attr("y", e => e.realy - 1)
             .attr("width", subCellSize)
             .attr("height", subCellSize)
             .style("fill", e => e.color)
-            .style("opacity", "0.7");
+            .style("opacity", function(e) {
+              return saturationScale(e.totalState).toString();
+            })
         });
     }
     drawSquares();
@@ -282,8 +306,9 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
   catsPerState[data.code] = scode.sort(function(a, b) {
     return a.category - b.category;
   });
-  console.log("data.code", data.code);
-  console.log("CATSPRERSTATE", catsPerState);
+  // console.log("scode",scode);
+  // console.log("data", data);
+  // console.log("CATSPRERSTATE", catsPerState[data.code]);
 
   var colorArray = [];
   scode.forEach(row => {
@@ -299,9 +324,7 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
 
   
 
-  console.log("SCODE",scode)
-  console.log("totalCatState",totalCatsState);
-  console.log("colorarray.length", colorArray.length);
+
 
   if (!logged) {
     logged = true;
@@ -335,13 +358,15 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
         catsPerState[data.code],
         categories_mapa[color.catId]
       );
-      // console.log(indexRow);
       gridData[row].push({
         x: xpos,
         y: ypos,
         color: categories[categories_mapa[color.catId]],
         cat: categories_mapa[color.catId],
-        index: indexRow
+        index: indexRow,
+        maxState: scode[indexRow]["maxState"],
+        minState: scode[indexRow]["minState"],
+        totalState: scode[indexRow]["totalState"]
       });
     }
       // increment x position (moving over by 50)
