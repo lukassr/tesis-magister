@@ -55,6 +55,11 @@
     overflow: hidden
 }
 
+#thumb{
+    width: 1500px;
+    height: 1000px;
+}
+
 #lense{
     overflow: auto;
     z-index: 1;
