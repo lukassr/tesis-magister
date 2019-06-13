@@ -6,8 +6,8 @@ var adjusted_height = 1000;
 
 
 var pathData = "./images/type/";
-var selectedYearLeft = "2017";
-var selectedYearRight = "2016";
+var selectedYearLeft = "2016";
+var selectedYearRight = "2017";
 
 function startVis(selectedYearLeft, selectedYearRight){
   slider = new juxtapose.JXSlider('#swipeYear',
@@ -24,7 +24,7 @@ function startVis(selectedYearLeft, selectedYearRight){
   {
     animate: true,
     showLabels: true,
-    startingPosition: "50%",
+    startingPosition: "46%",
     makeResponsive: true
   });
 }

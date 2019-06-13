@@ -193,7 +193,16 @@ var Magnifier = function (evt, options) {
             // .append('div')
             // .attr("id","yearLens")
             // .attr("class","yearLens")
-            // .text(selectedYearFront)
+            // .text(selectedYearFront);
+
+
+
+
+
+       
+
+
+
             
 
         },

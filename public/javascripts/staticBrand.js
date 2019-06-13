@@ -17,7 +17,9 @@ var margin = { top: 0, right: 0, bottom: 0, left: 0 },
 
 var pathData = "./data/brand/";
 var selectedYear = "2017";
-
+var minLum = 0.4;
+var medLum = 0.7;
+var maxLum = 0.9;
 
 const categories_mapa = {
   1: "Hyundai",
@@ -108,8 +110,9 @@ d3.csv(fileData, stateData => {
   });
 
 
-  var maxState = -1;
-  var minState = 100000;
+  maxState = -1;
+  minState = 100000;
+  
   Object.keys(stateOrderedData).forEach(state => {
     console.log(stateOrderedData[state]);
     
@@ -138,8 +141,8 @@ d3.csv(fileData, stateData => {
   console.log("stateOrderedData",stateOrderedData);
 
   var saturationScale = d3.scaleLinear()
-    .domain([minState, maxState/10,maxState])
-    .range([0.4,0.7,0.9])
+    .domain([minState, maxState/12,maxState])
+    .range([minLum,medLum,maxLum])
     .clamp(true);
 
 
@@ -202,7 +205,6 @@ d3.csv(fileData, stateData => {
               e.realx = realx;
               const realy = d.y + e.y - (cellSize / 2 + 5) + 1;
               e.realy = realy;
-              console.log("E",e)
             })
             .attr("x", e => e.realx - 3)
             .attr("y", e => e.realy - 1)
@@ -211,10 +213,12 @@ d3.csv(fileData, stateData => {
             .style("fill", e => e.color)
             .style("opacity", function(e) {
               return saturationScale(e.totalState).toString();
-            })
+            });
+            
         });
     }
     drawSquares();
+    createLegend(svg);
 
     // draw transparent rectangles on top to read events
     eventGrid = svg
@@ -241,7 +245,38 @@ d3.csv(fileData, stateData => {
       // .on("click", clicked);
   });
 });
-createLegend(svg);
+
+d3.select("#checkbox").on("change", function() {
+  if (d3.select("#checkbox").property("checked")){
+    yearTag();
+  }
+  else {
+    clearVis();
+    startVis(pathData+selectedYear+".csv")
+  }
+
+});
+
+function yearTag() {
+  svg.append("rect")
+  .attr("x", 15)
+  .attr("y",5)
+  .attr("width", 70)
+  .attr("height", 30)
+  .style("fill", "black")
+  .style("opacity", 0.75);
+
+  svg.append("text")
+  .attr("id", "textBack")
+  .attr("x",50)
+  .attr("y",30)
+  .text(selectedYear)
+  .attr("font-family", "sans-serif")
+  .attr("font-size", "25px")
+  .attr("text-anchor", "middle")
+  .style("fill", "white");
+
+  }
 }
 
 function clearVis(){
@@ -420,22 +455,66 @@ d3.select("#download")
 function createLegend(svg) {
   var i = 1;
   var size = 15;
+
+  svg.append("text")
+  .attr("x", adjusted_height + 240)
+  .attr("y", (70))
+  .style("fill", "black")
+  .text(minState)
+  .attr("text-anchor", "left")
+  .style("alignment-baseline", "middle")
+  .style("font-size", "11px")
+  .attr("font-family", "sans-serif");
+
+  svg.append("text")
+  .attr("x", adjusted_height + 285)
+  .attr("y", (70))
+  .style("fill", "black")
+  .text(maxState)
+  .attr("text-anchor", "left")
+  .style("alignment-baseline", "middle")
+  .style("font-size", "11px")
+  .attr("font-family", "sans-serif");
+
+
   for (const [key, value] of Object.entries(categories)) {
+    
     svg.append("rect")
     .attr("x", adjusted_height+250)
     .attr("y", 50 + i*(size*2))
     .attr("width", size)
     .attr("height", size)
-    .style("fill", value);
+    .style("fill", value)
+    .style("opacity", minLum);
+
+
+    svg.append("rect")
+    .attr("x", adjusted_height+250 + size)
+    .attr("y", 50 + i*(size*2))
+    .attr("width", size)
+    .attr("height", size)
+    .style("fill", value)
+    .style("opacity", medLum);
+
+    svg.append("rect")
+    .attr("x", adjusted_height+250 + size*2)
+    .attr("y", 50 + i*(size*2))
+    .attr("width", size)
+    .attr("height", size)
+    .style("fill", value)
+    .style("opacity", maxLum);
+
+
     
     svg.append("text")
-    .attr("x", adjusted_height + 270)
-    .attr("y", (50 + i*(size*2)) +size/1.3)
+    .attr("x", adjusted_height + 270 + size*3)
+    .attr("y", (50 + i*(size*2)) +size/2)
     .style("fill", value)
     .text(key)
     .attr("text-anchor", "left")
     .style("alignment-baseline", "middle")
-    .attr("font-family", "sans-serif")
+    .attr("font-family", "sans-serif");
     i++;
   }
 }
+

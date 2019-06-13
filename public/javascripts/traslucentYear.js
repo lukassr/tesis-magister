@@ -116,19 +116,19 @@ d3.select("#opacity")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 0.1);
+      .style("opacity", 0.01);
 
       d3.select("#textFront")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 0.1);
+      .style("opacity", 0.01);
 
       d3.select("#textBack")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 99);
+      .style("opacity", 99.9);
       d3.select("#opacity")["_groups"][0][0]["value"] = 0;
 
 
@@ -141,19 +141,19 @@ d3.select("#opacity")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 99);
+      .style("opacity", 99.9);
 
       d3.select("#textFront")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 99);
+      .style("opacity", 99.9);
 
       d3.select("#textBack")
       .transition()
       .duration(10)
       .ease(d3.easeLinear)
-      .style("opacity", 0.1);
+      .style("opacity", 0.01);
     }
   })
 

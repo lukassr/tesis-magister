@@ -17,6 +17,9 @@ var margin = { top: 0, right: 0, bottom: 0, left: 0 },
 
 var pathData = "./data/type/";
 var selectedYear = "2017";
+var minLum = 0.4;
+var medLum = 0.7;
+var maxLum = 0.9;
 
 
 const categories_mapa = {
@@ -108,18 +111,40 @@ d3.csv(fileData, stateData => {
   });
 
 
+  maxState = -1;
+  minState = 100000;
+  
   Object.keys(stateOrderedData).forEach(state => {
+    console.log(stateOrderedData[state]);
     
     var aux_total = 0;
     stateOrderedData[state].forEach(total => {
       aux_total += parseInt(total.category)
     });
-    aux_total = 100/aux_total;
+    var aux_total2 = 100/aux_total;
+    if (aux_total>=maxState) maxState = aux_total;
+    if ((aux_total < minState) && (aux_total >= 50)) minState = aux_total;
     stateOrderedData[state].forEach(total => {
-      total.category = Math.round(total.category * aux_total)+1;
+      total.totalState = aux_total;
+      total.category = Math.round(total.category * aux_total2)+1;
+
     });
   });
+
+  Object.keys(stateOrderedData).forEach(state => {
+    stateOrderedData[state].forEach(total => {
+      total.maxState = maxState;
+      total.minState = minState;
+    });
+    });
+
+
   console.log("stateOrderedData",stateOrderedData);
+
+  var saturationScale = d3.scaleLinear()
+    .domain([minState, maxState/12,maxState])
+    .range([minLum,medLum,maxLum])
+    .clamp(true);
 
 
   d3.csv("./grid.csv", data => {
@@ -187,10 +212,14 @@ d3.csv(fileData, stateData => {
             .attr("width", subCellSize)
             .attr("height", subCellSize)
             .style("fill", e => e.color)
-            .style("opacity", "0.7");
+            .style("opacity", function(e) {
+              return saturationScale(e.totalState).toString();
+            });
+            
         });
     }
     drawSquares();
+    createLegend(svg);
 
     // draw transparent rectangles on top to read events
     eventGrid = svg
@@ -217,7 +246,38 @@ d3.csv(fileData, stateData => {
       // .on("click", clicked);
   });
 });
-createLegend(svg);
+
+d3.select("#checkbox").on("change", function() {
+  if (d3.select("#checkbox").property("checked")){
+    yearTag();
+  }
+  else {
+    clearVis();
+    startVis(pathData+selectedYear+".csv")
+  }
+
+});
+
+function yearTag() {
+  svg.append("rect")
+  .attr("x", 15)
+  .attr("y",5)
+  .attr("width", 70)
+  .attr("height", 30)
+  .style("fill", "black")
+  .style("opacity", 0.75);
+
+  svg.append("text")
+  .attr("id", "textBack")
+  .attr("x",50)
+  .attr("y",30)
+  .text(selectedYear)
+  .attr("font-family", "sans-serif")
+  .attr("font-size", "25px")
+  .attr("text-anchor", "middle")
+  .style("fill", "white");
+
+  }
 }
 
 function clearVis(){
@@ -278,12 +338,13 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
   if (stateData[data.code] == null) {
     scode = [];
   }
+
   catsPerState[data.code] = scode.sort(function(a, b) {
     return a.category - b.category;
   });
-  // console.log("CATSPRERSTATE", catsPerState);
-  // console.log("data.code", data.code);
-  
+  // console.log("scode",scode);
+  // console.log("data", data);
+  // console.log("CATSPRERSTATE", catsPerState[data.code]);
 
   var colorArray = [];
   scode.forEach(row => {
@@ -299,9 +360,7 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
 
   
 
-  // console.log("SCODE",scode)
-  // console.log("totalCatState",totalCatsState);
-  // console.log("colorarray.length", colorArray.length);
+
 
   if (!logged) {
     logged = true;
@@ -335,13 +394,15 @@ function getGridData2(ncol, nrow, width, height, data, stateData) {
         catsPerState[data.code],
         categories_mapa[color.catId]
       );
-      // console.log(indexRow);
       gridData[row].push({
         x: xpos,
         y: ypos,
         color: categories[categories_mapa[color.catId]],
         cat: categories_mapa[color.catId],
-        index: indexRow
+        index: indexRow,
+        maxState: scode[indexRow]["maxState"],
+        minState: scode[indexRow]["minState"],
+        totalState: scode[indexRow]["totalState"]
       });
     }
       // increment x position (moving over by 50)
@@ -395,22 +456,66 @@ d3.select("#download")
 function createLegend(svg) {
   var i = 1;
   var size = 15;
+
+  svg.append("text")
+  .attr("x", adjusted_height + 240)
+  .attr("y", (70))
+  .style("fill", "black")
+  .text(minState)
+  .attr("text-anchor", "left")
+  .style("alignment-baseline", "middle")
+  .style("font-size", "11px")
+  .attr("font-family", "sans-serif");
+
+  svg.append("text")
+  .attr("x", adjusted_height + 285)
+  .attr("y", (70))
+  .style("fill", "black")
+  .text(maxState)
+  .attr("text-anchor", "left")
+  .style("alignment-baseline", "middle")
+  .style("font-size", "11px")
+  .attr("font-family", "sans-serif");
+
+
   for (const [key, value] of Object.entries(categories)) {
+    
     svg.append("rect")
     .attr("x", adjusted_height+250)
     .attr("y", 50 + i*(size*2))
     .attr("width", size)
     .attr("height", size)
-    .style("fill", value);
+    .style("fill", value)
+    .style("opacity", minLum);
+
+
+    svg.append("rect")
+    .attr("x", adjusted_height+250 + size)
+    .attr("y", 50 + i*(size*2))
+    .attr("width", size)
+    .attr("height", size)
+    .style("fill", value)
+    .style("opacity", medLum);
+
+    svg.append("rect")
+    .attr("x", adjusted_height+250 + size*2)
+    .attr("y", 50 + i*(size*2))
+    .attr("width", size)
+    .attr("height", size)
+    .style("fill", value)
+    .style("opacity", maxLum);
+
+
     
     svg.append("text")
-    .attr("x", adjusted_height + 270)
-    .attr("y", (50 + i*(size*2)) +size/1.3)
+    .attr("x", adjusted_height + 270 + size*3)
+    .attr("y", (50 + i*(size*2)) +size/2)
     .style("fill", value)
     .text(key)
     .attr("text-anchor", "left")
     .style("alignment-baseline", "middle")
-    .attr("font-family", "sans-serif")
+    .attr("font-family", "sans-serif");
     i++;
   }
 }
+

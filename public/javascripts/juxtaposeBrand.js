@@ -1,6 +1,6 @@
 
 //var adjusted_width = limitant * 940
-var adjusted_width = "140%";
+var adjusted_width = 1250;
 //var adjusted_height = limitant * 626
 var adjusted_height = 1000;
 
@@ -21,14 +21,14 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
   var svg = d3.select("#juxtaposeYear")
   .append("svg")
   .attr("id", "svg")
-  .attr("width", "135%")
-  .attr("height", 800)
+  .attr("width", adjusted_width)
+  .attr("height", adjusted_height)
   
   var svg2 = d3.select("#juxtaposeYear")
   .append("svg")
   .attr("id", "svg2")
-  .attr("width", "150%")
-  .attr("height", 800);
+  .attr("width", adjusted_width)
+  .attr("height", adjusted_height);
 
 
 
@@ -39,8 +39,8 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
     .append("svg:image")
     .attr("id", "imageBack")
     .attr("xlink:href", pathData+selectedYearBack+'.png')
-    .attr("width", "120%")
-    .attr("height", "120%")
+    .attr("width", adjusted_width)
+    .attr("height", "100%")
     .style("opacity", 1)
     .call(zoom);
 
@@ -102,8 +102,8 @@ function startVis(selectedYearFront, selectedYearBack, opacitySelected){
   .append("svg:image")
   .attr("id", "imageFront")
   .attr("xlink:href", pathData+selectedYearFront+'.png')
-  .attr("width", "110%")
-  .attr("height", "120%")
+  .attr("width", adjusted_width)
+  .attr("height", "100%")
   .style("opacity", 1)
   .call(zoom);
 
@@ -207,8 +207,8 @@ d3.select("#yearSelectorBack")
     .attr("x", d3.mouse(this)[0] - squareWidth/2)
     .attr("y", d3.mouse(this)[1] - squareWidth/2);
     d3.select("#lense2")
-    .attr("x", d3.mouse(this)[0] - squareWidth/2 + 15)
-    .attr("y", d3.mouse(this)[1] - squareWidth/2 - 5);
+    .attr("x", d3.mouse(this)[0] - squareWidth/2)
+    .attr("y", d3.mouse(this)[1] - squareWidth/2);
 
     // console.log("X: ",d3.mouse(this)[0]);
     // console.log("Y: ", d3.mouse(this)[1]);
@@ -218,8 +218,8 @@ d3.select("#yearSelectorBack")
   .on("mousemove", function() {
 
     d3.select("#lense")
-    .attr("x", d3.mouse(this)[0] - squareWidth/2 -5)
-    .attr("y", d3.mouse(this)[1] - squareWidth/2 + 5);
+    .attr("x", d3.mouse(this)[0] - squareWidth/2)
+    .attr("y", d3.mouse(this)[1] - squareWidth/2);
     d3.select("#lense2")
     .attr("x", d3.mouse(this)[0] - squareWidth/2 )
     .attr("y", d3.mouse(this)[1] - squareWidth/2 );

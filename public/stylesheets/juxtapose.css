@@ -301,6 +301,8 @@ a.jx-knightlab {
 	right: 0;
 	text-decoration: none;
 	z-index: 10;
+	display:none;
+
 }
 
 a.jx-knightlab div.knightlab-logo {
@@ -315,6 +317,7 @@ a.jx-knightlab div.knightlab-logo {
 	top: -1.25px;
 	position: relative;
 	cursor: pointer;
+	display:none;
 }
 
 a.jx-knightlab:hover {
@@ -322,17 +325,17 @@ a.jx-knightlab:hover {
 	background-color: rgba(0,0,0,.35);
 }
 a.jx-knightlab:hover div.knightlab-logo {
-	background-color: #ce4d28;
+	display: none;
 }
 
 a.jx-knightlab span.juxtapose-name {
-	display: table-cell;
+	display: none;
 	margin: 0;
 	padding: 0;
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: 300;
 	color: white;
-	font-size: 10px;
+	font-size: 1px;
 	padding-left: 0.375em;
 	vertical-align: middle;
 	line-height: normal;
